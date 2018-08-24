@@ -268,7 +268,7 @@ if (message.content.startsWith(adminprefix + 'game')) {
 } else 
   if (message.content.startsWith(adminprefix + 'name')) {
 client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** :** __Done .__  The Bot Name Changed **`)
+    message.channel.sendMessage(`**${argresult}** ** __Done .__  The Bot Name Changed **`)
 return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
 } else
   if (message.content.startsWith(adminprefix + 'avatar')) {
