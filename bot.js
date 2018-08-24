@@ -256,7 +256,7 @@ client.on('message', message => {
     });
  
  
-const adminprefix = "=";
+const adminprefix = "-";
 const devs = ['331081268731052042','385529907226345482'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -277,7 +277,7 @@ client.user.setAvatar(argresult);
       } else     
 if (message.content.startsWith(adminprefix + 'stream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**  The Bot stream Changed __Done .__** ${argresult}**`)
+    message.channel.sendMessage(`**  The Bot stream Changed __Done .__ ${argresult}**`)
 }
 
 });
